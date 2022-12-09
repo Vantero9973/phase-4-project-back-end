@@ -1,3 +1,4 @@
 class User < ApplicationRecord
-    has_one :matched_destination
+    has_secure_password
+    has_many :destinations
 end
